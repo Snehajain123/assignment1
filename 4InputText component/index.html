@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>textcomponent</title>
+<script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+<div id="app">
+<custom-input
+   :model-value="message" 
+  @Update:model-value="message = $event"
+  >
+</custom-input>
+<p>Message is: {{ message }}</p>	   
+</div>
+<script src="./main.js"></script>
+<script>
+	const mountedApp = app.mount('#app')
+</script>
+</body>
+</html>
